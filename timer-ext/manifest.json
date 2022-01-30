@@ -1,0 +1,23 @@
+{
+    "name": "Timer Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content-scripts":[
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_icon" : "/images/clock.png",
+        "default_popup": "popup.html",
+        "default_title": "Popup"
+    },
+    "icons":{
+        "16": "/images/clock16.png",
+        "32": "/images/clock32.png",
+        "64": "/images/clock64.png"
+    }
+}
