@@ -1,0 +1,8 @@
+--ADD
+
+
+-Implement the functionality of the reset button
+-Add a background script so you dont have to reload at the begining
+Because of the popup problem
+-Refactor Comments
+-Write the doc

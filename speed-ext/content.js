@@ -12,7 +12,27 @@ let col = document.getElementsByTagName("video")
 let player = col.item(0)
 
 //Set the playbackRate with the value that we get from the user
-player.playbackRate = 0.5
 
 
+
+
+//Using Storage method
+//
+//
+/*
+chrome.storage.local.get("b", function(data){
+    console.log(data.b)
+    player.playbackRate = data.b
+})
+*/
+
+//Using Sending Message method / communicating between script and popup
+//
+//
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+      console.log(request.greeting)
+      player.playbackRate = request.greeting
+    }
+  );
 

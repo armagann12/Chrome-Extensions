@@ -3,6 +3,11 @@
     "description": "Speed your videos",
     "version": "1.0",
     "manifest_version": 3,
+    "permissions" : [
+        "tabs", 
+        "activeTab",
+        "storage"
+    ],
     "content_scripts": [
       {
         "matches": [
