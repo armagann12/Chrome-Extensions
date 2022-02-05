@@ -6,3 +6,8 @@
 Because of the popup problem
 -Refactor Comments
 -Write the doc
+
+Errors
+-Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
+-Unchecked runtime.lastError: The message port closed before a response was received.
+(Because of not having background i think fix it)

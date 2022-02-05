@@ -3,7 +3,6 @@ a.addEventListener("click", func)
 
 function func(){
     const b = document.getElementById("speed").value
-    console.log(b)
 
 //Using Storage method
 //
@@ -15,7 +14,6 @@ function func(){
 //
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {greeting: b}, function(response) {
-      console.log(response.farewell);
     });
   });
 

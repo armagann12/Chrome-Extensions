@@ -1,6 +1,3 @@
-console.log("hadssssssssss")
-console.log("AAAAAAAAA")
-
 //Returns a HTML Collection Array
 // >HTMLCollection[video.video-stream.html5-main-video]
 let col = document.getElementsByTagName("video")
@@ -31,7 +28,6 @@ chrome.storage.local.get("b", function(data){
 //
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-      console.log(request.greeting)
       player.playbackRate = request.greeting
     }
   );
